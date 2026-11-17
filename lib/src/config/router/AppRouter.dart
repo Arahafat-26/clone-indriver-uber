@@ -1,5 +1,6 @@
 import 'package:flutter_app_uber/src/views/pages/auth/home/HomePage.dart';
 import 'package:flutter_app_uber/src/views/pages/auth/login/LoginPage.dart';
+import 'package:flutter_app_uber/src/views/pages/auth/register/RegisterPage.dart';
 import 'package:go_router/go_router.dart';
 
 final GoRouter appRouter = GoRouter(
@@ -12,6 +13,10 @@ final GoRouter appRouter = GoRouter(
       GoRoute(
       path: '/login',
       builder: (context, state) => const Loginpage()
-      )
+      ),
+      GoRoute(
+      path: '/register',
+      builder: (context, state) => const RegisterPage()
+      ),
   ]
 );

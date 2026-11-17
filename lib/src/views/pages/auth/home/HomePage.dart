@@ -76,7 +76,7 @@ class HomePage extends StatelessWidget {
               ),
               child: FilledButton(
                 onPressed: (){
-                      
+                  context.go('/register');                        
                 },
                 style: FilledButton.styleFrom(
                   backgroundColor: Colors.white
